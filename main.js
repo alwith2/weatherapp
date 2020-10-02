@@ -1,16 +1,24 @@
 //get variables
+// button
 const btn = document.getElementById("btn");
+// click
 btn.addEventListener('click', callWeatherAPI);
+// zip code display
 const zipCode = document.getElementById("ZipCode");
 const errorMessage = document.getElementById("errorMessage");
+// city display
 const cityName = document.getElementById("cityName");
+// temps
 const temperatureK = document.getElementById("temperatureK");
 const temperatureF = document.getElementById("temperatureF");
 const temperatureC = document.getElementById("temperatureC");
+// condition display
 const condition = document.getElementById("Condition");
+// image display
 const image = document.getElementById("Image");
 // scratchpad js
 // fetch
+// api info
 var key = "9486e32b8910c337e546831e5ddf6106";
 var zip = "40505"; //document.getHTMLById(input)
 var api = `https://api.openweathermap.org/data/2.5/weather?appid=${key}&zip=${zip}`;
